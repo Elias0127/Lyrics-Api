@@ -1,38 +1,100 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+
+:root {
+  --white: #fff;
+  --black: #1c2b2d;
+  --blue: #31326f;
+  --color-primary: #9d0191;
+  --color-sec: #dddd1c;
+  --color-grey: #eee;
+  --color-dark-grey: #222831;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  margin: 0 auto;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: var(--color-sec);
+  color: white;
+  height: 100vh;
+  position: relative;
+}
+
+header .container {
+  padding: 1rem 0;
   text-align: center;
+  margin-bottom: 1rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header h1 {
+  font-size: 3rem;
+  color: rgb(12, 11, 11);
+  padding-bottom: .5rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+form input,
+form button {
+  font: inherit;
+  letter-spacing: inherit;
+  padding: 4px 0 5px;
+  border: 0;
+  box-sizing: content-box;
+  background: none;
+  height: 1.4375em;
+  margin: 0;
+  -webkit-tap-highlight-color: transparent;
+  display: block;
+  min-width: 0;
+  width: 100%;
+  -webkit-animation-name: mui-auto-fill-cancel;
+  animation-name: mui-auto-fill-cancel;
+  -webkit-animation-duration: 10ms;
+  animation-duration: 10ms;
+  padding: 16.5px 14px;
+
 }
+
+form button {
+  border-radius: 5rem;
+}
+
+form button:hover {
+  border: 1px solid #fff;
+  cursor: pointer;
+}
+
+form input {
+  width: 50%;
+  border-radius: 2rem;
+  margin-right: 3px;
+}
+
+.lyricsGrid {
+  font-size: medium;
+}
+.input{
+  color: #31326f;
+}
+
+
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  /* background-color: #282c34; */
+  /* height: 100vh; */
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  /* font-size: calc(10px + 2vmin); */
+  /* color: white; */
 }
